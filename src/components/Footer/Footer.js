@@ -18,8 +18,8 @@ class Footer extends React.Component {
         return (
             
                 <footer className="uk-text-small">
-                    <a href="https://spline.design/coronavirus3d/" target="_blank">Used Model from project Made by @alelepd that was
-                    Rendered in Spline with ThreeJS. Show that project some 💜</a>
+                Made by an 👽, 🐯, and <a href="https://twitter.com/jkeatin" target="_blank" style={{ textDecoration: 'none' }}>@jkeatin</a>. 3D Model from project made by <a href="https://twitter.com/alelepd" target="_blank" style={{ textDecoration: 'none' }}>@alelepd</a> that was
+                    Rendered in Spline with ThreeJS. Show that project some 💜 <a href="https://spline.design/coronavirus3d/" target="_blank" style={{ textDecoration: 'none' }}>🔗</a>
                 </footer>
         )
     }

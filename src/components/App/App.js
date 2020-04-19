@@ -4,6 +4,8 @@ import logo from '../../logo.svg';
 import Header from '../Header/Header';
 import Model from '../Model/Model';
 import Footer from '../Footer/Footer';
+import CopyButton from '../CopyButton/CopyButton';
+import AlienModal from '../AlienModal/AlienModal';
 
 function App() {
   return (
@@ -11,12 +13,17 @@ function App() {
       <div className="uk-container">
 
         <Header />
+        
         <Model />
         <hr className="uk-divider-icon" />
+        <CopyButton />
+        <hr className="uk-divider-icon" />
         <Footer />
+        <AlienModal />
 
         </div>
       </div>
+    
   );
 }
 

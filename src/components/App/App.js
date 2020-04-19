@@ -1,6 +1,4 @@
 import React from 'react';
-import logo from '../../logo.svg';
-// import './App.css';
 import Header from '../Header/Header';
 import Model from '../Model/Model';
 import Footer from '../Footer/Footer';
@@ -15,7 +13,6 @@ function App() {
         <Header />
         
         <Model />
-        <hr className="uk-divider-icon" />
         <CopyButton />
         <hr className="uk-divider-icon" />
         <Footer />

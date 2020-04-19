@@ -6,37 +6,37 @@ class CopyButton extends React.Component {
         super(props);
 
         this.state = { copySuccess: '' }
+        
     }
 
     copyToClipboard = (e) => {
         this.textArea.select();
         document.execCommand('copy');
-        // This is just personal preference.
-        // I prefer to not show the the whole text area selected.
         e.target.focus();
-        this.setState({ copySuccess: ' You did it! 🙌' });
+        this.setState({ copySuccess: ' You did it 🙌! Now just switch to Safari/Chrome and paste this magical link in the browser address bar. The button on the 3D Coronavirus Model should show up now 🤞!' });
     };
 
     render() {
         return (
             <div>
                 {
-                    /* Logical shortcut for only displaying the 
-                       button if the copy command exists */
+
                     document.queryCommandSupported('copy') &&
-                    <div className="uk-margin-large uk-margin-large-top">
-                        <p className="uk-margin uk-text-small uk-text-light">You have to have an AR compatible 📱 to be able to take 📸 with the Coronavirus 3D Model. You also have to make sure you are in your 📱's default browser, like Safari/Chrome and not visiting this link in facebook's/twitter's/instagram's/ web browser. Sorry 😥! Just copy the link below and open it in Safar/Chrome and you should be ready to go!</p>
-                        <button className="uk-button uk-button-default" onClick={this.copyToClipboard}>Copy Website 🔗</button><br></br><br></br>
-                        {this.state.copySuccess}
+                    <div className="uk-margin-medium uk-margin-medium-top">
+                        <p className="uk-margin uk-text-small uk-text-light">Just press on the button that shows up on the 3D model above and you are all set! Make sure you are in your <span role="img" aria-label="Phone">📱</span>'s default browser, like Safari/Chrome and not visiting this website in Facebook's/Twitter's/Instagram's/ web browser. They do not support fun like this yet, sorry <span role="img" aria-label="Sad Smiley Face">😥</span>! Just copy the link below and open it in Safari/Chrome and you should be ready to go!</p>
+                        <button className="uk-button uk-button-default" onClick={this.copyToClipboard}>Copy Website <span role="img" aria-label="Link">🔗</span></button>
+                        <p className="uk-margin uk-text-small uk-text-light">{this.state.copySuccess}</p>
                     </div>
                 }
                 <form>
                     <textarea
                         ref={(textarea) => this.textArea = textarea}
                         value='https://corona-model-app.onrender.com/'
-                        className="uk-textarea"
+                        className="uk-textarea uk-text-small uk-text-light"
+                        readOnly
                     />
                 </form>
+                <p className="uk-margin uk-text-small uk-text-light">If you are still having issues your <span role="img" aria-label="Phone">📱</span> is probably not be AR compatible. Might be time for an upgrade!</p>
             </div>
         );
     }

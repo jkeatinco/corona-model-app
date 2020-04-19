@@ -1,26 +1,13 @@
 import React from 'react';
-// import './Business.css';
-
-// const business = {
-//     imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
-//     name: 'MarginOtto Pizzeria',
-//     address: '1010 Paddington Way',
-//     city: 'Flavortown',
-//     state: 'NY',
-//     zipCode: '10101',
-//     category: 'Italian',
-//     rating: 4.5,
-//     reviewCount: 90
-// };
 
 class Footer extends React.Component {
     render() {
         return (
             
-                <footer className="uk-text-small">
-                Made by an 👽, 🐯, and <a href="https://twitter.com/jkeatin" target="_blank" style={{ textDecoration: 'none' }}>@jkeatin</a>. 3D Model from project made by <a href="https://twitter.com/alelepd" target="_blank" style={{ textDecoration: 'none' }}>@alelepd</a> that was
-                    Rendered in Spline with ThreeJS. Show that project some 💜 <a href="https://spline.design/coronavirus3d/" target="_blank" style={{ textDecoration: 'none' }}>🔗</a>
-                </footer>
+            <footer className="uk-text-small uk-text-light">
+                Made by an <span role="img" aria-label="Alien">👽</span>, <span role="img" aria-label="Tiger">🐯</span>, and <a href="https://twitter.com/jkeatin" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>@jkeatin</a>. 3D Model was taken from a project made by <a href="https://twitter.com/alelepd" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>@alelepd</a> that was
+                Rendered in Spline with ThreeJS. Show that project some <span role="img" aria-label="Purple Hert">💜</span> <a href="https://spline.design/coronavirus3d/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}><span role="img" aria-label="Link">🔗</span></a>
+            </footer>
         )
     }
 };
